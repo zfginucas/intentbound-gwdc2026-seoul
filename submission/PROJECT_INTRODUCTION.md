@@ -16,7 +16,7 @@ This is a **testnet prototype**, not a live delivery integration. Restaurants, m
 
 ## Evidence From The Final Video Session
 
-- **Video:** [2:45 verified Shasta demo](../demo/intentbound-verified-shasta.mp4), 1920 x 1080. It is an edited capture of the product and one verified session, not an uncut live recording.
+- **Video:** [2:45 Hailuo-voiced verified Shasta demo](../demo/intentbound-verified-shasta-hailuo.mp4), 1920 x 1080. It is an edited capture of the product and one verified session, not an uncut live recording. The [silent verified master](../demo/intentbound-verified-shasta.mp4) remains a backup.
 - **Deployment:** `SessionVault` at `TG8h1Y9myf8iLgDRHFR3oJzfSmt4WCeugq` on TRON Shasta; [deployment record](../chain/deployments/shasta.json). Session ID: `0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d`.
 - **On-chain payment:** 16 test TRX to the approved recipient, transaction `fe89db2251a2d9bcda0e41f5e7bd0f447cb22de7fbd625c96fa42119d67ce2ed`, matching the `PaymentExecuted` event in the [session evidence](../docs/evidence/final-video-shasta-session.json). The same file records the two earlier `AttemptRejected` events, owner revoke, and post-revoke rejection with transaction hashes.
 - **Independent check:** The [no-key verifier result](../docs/evidence/final-video-independent-audit.json) passes 12 checks against the exported policy and public Shasta receipts, including the 16 test TRX contract spend. Run `npm run audit:shasta -- docs/evidence/final-video-shasta-session.json` to repeat verification.

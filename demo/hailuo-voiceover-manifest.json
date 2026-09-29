@@ -1,0 +1,123 @@
+{
+  "sourceVideo": "intentbound-verified-shasta.mp4",
+  "outputVideo": "intentbound-verified-shasta-hailuo.mp4",
+  "outputAudio": "intentbound-hailuo-voiceover.mp3",
+  "durationSeconds": 165,
+  "gatewayOrigin": "https://ai.hashsight.org",
+  "model": "speech-2.8-hd",
+  "voiceId": "Charming_Lady",
+  "totalUsageCharacters": 1846,
+  "scenes": [
+    {
+      "scene": 1,
+      "seconds": 12,
+      "text": "At G W D C Seoul, Mina codes through dinner. Her personal agent picks a meal. But who gave it permission to pay?",
+      "rawSeconds": 9.079031,
+      "tempo": 0.9264317346938775,
+      "adjustedSeconds": 9.8,
+      "tailSeconds": 1.8499999999999996,
+      "usageCharacters": 112,
+      "cached": true
+    },
+    {
+      "scene": 2,
+      "seconds": 18,
+      "text": "She asks for a warm dinner without cilantro. Kiln's Kwen three, thirty-two B parses her intent and compares a simulated menu. It recommends a dish, but cannot authorize payment or quietly change her budget.",
+      "rawSeconds": 14.22225,
+      "tempo": 0.9001424050632911,
+      "adjustedSeconds": 15.8,
+      "tailSeconds": 1.8499999999999979,
+      "usageCharacters": 206,
+      "cached": true
+    },
+    {
+      "scene": 3,
+      "seconds": 15,
+      "text": "Mina reviews the actual boundary: eighteen test T R X all-in, two exact payee addresses, and ten minutes. This prototype uses a server-side demo wallet, not her personal TronLink.",
+      "rawSeconds": 13.188938,
+      "tempo": 1.03038578125,
+      "adjustedSeconds": 12.8,
+      "tailSeconds": 1.8499999999999996,
+      "usageCharacters": 179,
+      "cached": true
+    },
+    {
+      "scene": 4,
+      "seconds": 10,
+      "text": "The demo owner funds a Shasta session. The model has no wallet key. Contract rules govern payment.",
+      "rawSeconds": 7.418781,
+      "tempo": 0.9511257692307693,
+      "adjustedSeconds": 7.8,
+      "tailSeconds": 1.8500000000000005,
+      "usageCharacters": 98,
+      "cached": true
+    },
+    {
+      "scene": 5,
+      "seconds": 23,
+      "text": "Look closer: a first quote says fifteen for food. Delivery adds two; service adds two. Nineteen total, one above Mina's cap. The contract rejects the attempt on Shasta and records the reason. No payment leaves the vault. The attractive menu price does not change that.",
+      "rawSeconds": 24.624,
+      "tempo": 1.1838461538461538,
+      "adjustedSeconds": 20.8,
+      "tailSeconds": 1.8499999999999979,
+      "usageCharacters": 268,
+      "cached": true
+    },
+    {
+      "scene": 6,
+      "seconds": 22,
+      "text": "The next quote is cheaper at fourteen. The merchant name looks familiar; the receiving address does not. It is not one of Mina's two approved payees. Another on-chain rejection. Price alone is not permission, and a lookalike name is not identity.",
+      "rawSeconds": 16.795156,
+      "tempo": 0.88,
+      "adjustedSeconds": 19.085404545454544,
+      "tailSeconds": 2.5645954545454543,
+      "usageCharacters": 246,
+      "cached": true
+    },
+    {
+      "scene": 7,
+      "seconds": 24,
+      "text": "This time, yes. Han Table's meal is thirteen; delivery adds two, service adds one. Sixteen test T R X fits the policy. Shasta confirms the payment, and the receipt shows its transaction hash. The merchant order is simulated; no actual dinner is delivered. The testnet transfer is real.",
+      "rawSeconds": 24.3,
+      "tempo": 1.114678899082569,
+      "adjustedSeconds": 21.799999999999997,
+      "tailSeconds": 1.8500000000000014,
+      "usageCharacters": 285,
+      "cached": true
+    },
+    {
+      "scene": 8,
+      "seconds": 13,
+      "text": "Mina presses Stop. Shasta confirms revocation. A one T R X add-on now fails, despite two T R X of unused budget.",
+      "rawSeconds": 8.254719,
+      "tempo": 0.88,
+      "adjustedSeconds": 9.3803625,
+      "tailSeconds": 3.2696375,
+      "usageCharacters": 112,
+      "cached": true
+    },
+    {
+      "scene": 9,
+      "seconds": 18,
+      "text": "With the exported record and session I D, anyone can run the read-only audit; no wallet is needed. It replays the policy, submitted quotes, payees, and four Shasta decisions. It checks authorization, not whether dinner arrives.",
+      "rawSeconds": 16.795156,
+      "tempo": 1.062984556962025,
+      "adjustedSeconds": 15.800000000000002,
+      "tailSeconds": 1.849999999999996,
+      "usageCharacters": 227,
+      "cached": true
+    },
+    {
+      "scene": 10,
+      "seconds": 10,
+      "text": "Two Kiln calls. No model calls for enforcement. Dinner is the demo; accountable agentic commerce is the ambition.",
+      "rawSeconds": 9.044188,
+      "tempo": 1.159511282051282,
+      "adjustedSeconds": 7.8,
+      "tailSeconds": 1.8500000000000005,
+      "usageCharacters": 113,
+      "cached": true
+    }
+  ],
+  "disclosure": "Simulated food merchants; real Kiln and TRON Shasta evidence. Voice synthesized through the configured Hailuo TTS gateway."
+}

@@ -1,4 +1,5 @@
 Kiln_API
+海螺_ASR
 .env
 .env.*
 !.env.example
@@ -18,5 +19,6 @@ presentation/.build/
 presentation/.codex-finalizer/
 presentation/output/IntentBound_GWDC_ChallengeB_v5.pptx
 demo/output/
+demo/.voice-work/
 demo/intentbound-preview-no-payment.mp4
 *.tsbuildinfo

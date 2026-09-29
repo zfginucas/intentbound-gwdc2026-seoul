@@ -7,6 +7,7 @@
     "dev:web": "npm --prefix web run dev",
     "check": "npm --prefix policy test && npm --prefix chain test && npm --prefix server run typecheck && npm --prefix server test && npm --prefix web run build && npm --prefix web test",
     "shasta:status": "npm --prefix chain run shasta:status",
-    "audit:shasta": "node audit/verify-shasta.mjs"
+    "audit:shasta": "node audit/verify-shasta.mjs",
+    "voice:hailuo": "node demo/hailuo-voiceover.mjs"
   }
 }

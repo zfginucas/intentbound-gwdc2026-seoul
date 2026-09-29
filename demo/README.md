@@ -4,8 +4,9 @@ The submitted video target is **2:45 (165 seconds)**, leaving 15 seconds under t
 
 ## Verified Shasta run
 
-- [Silent verified MP4](intentbound-verified-shasta.mp4): **165.00 seconds, 1920x1080**. This is the evidence-checked 2:45 animatic; it uses real product frames, not fabricated chain graphics.
-- [Optional narrated MP4](intentbound-verified-shasta-voiced.mp4): the same verified frames and timing with local macOS Samantha narration. The silent master remains untouched and is preferable if a human voiceover is available.
+ - [Hailuo HD narrated MP4](intentbound-verified-shasta-hailuo.mp4): **current submission version**, 165.00 seconds, 1920x1080, English AAC narration generated with speech-2.8-hd. Its [audio-only MP3](intentbound-hailuo-voiceover.mp3) and [generation manifest](hailuo-voiceover-manifest.json) are included.
+ - [Silent verified MP4](intentbound-verified-shasta.mp4): evidence-checked master with identical video frames, preserved as a backup.
+ - [Older Samantha narration](intentbound-verified-shasta-voiced.mp4): local macOS system-voice backup, not the current submission version.
 - [Evidence snapshot](evidence/capture.json): one new Shasta session, on-chain A/B rejections, C payment, revoke, D post-stop rejection, and a **10-check passing public audit**. The [raw session evidence](evidence/shasta-session-evidence.json), [audit response](evidence/shasta-audit.json), and [this run's Kiln usage](evidence/kiln-usage-this-run.json) are included beside the [captured frames](evidence/shots/).
 
 This run's two real Kiln `qwen3-32b` calls used **619 input + 175 output = 794 reported tokens**. The recipient directory, quotes, and fulfillment remain simulated. The current video was captured in two browser segments on the **same session** after a UI label changed mid-recording; `capture.json` discloses the resume. No smoke-session transaction was substituted.
@@ -54,7 +55,17 @@ node demo/voiceover.mjs demo/output/live-<timestamp>
 node demo/render.mjs demo/output/live-<timestamp> --voiceover demo/output/live-<timestamp>/voiceover-Samantha.wav --output demo/intentbound-verified-shasta-voiced.mp4
 ```
 
-Without `--voiceover`, the MP4 has a silent audio track ready for editing. Use `raw-ui-initial.webm` and `raw-ui-resume.webm` from this capture directory for animated click/scroll cutaways; the animatic uses still product frames to hold exact beats. In the finished edit, keep the simulated-marketplace disclosure visible and indicate when Shasta confirmation waits have been shortened.
+## Hailuo HD narration
+
+The current submission voice uses the locally supplied access code in the ignored 海螺_ASR file. The script sends that code only to the URL in the same file, checks Hailuo text-to-speech permission with the configured speech model, and caches each of the ten generated scene clips under the ignored demo/.voice-work directory. Do not commit or share the access code.
+
+~~~sh
+npm run voice:hailuo
+~~~
+
+The script keeps the verified silent video stream unchanged, assembles 165 seconds of scene-aligned audio, and exports a separate narrated MP4 plus an audio-only MP3. Current model: speech-2.8-hd; voice: Charming_Lady; generated characters: 1,846. Each scene leaves roughly 2-3 seconds for visual breathing room rather than the older long gaps. The manifest records scene timing and usage but never the access code.
+
+Without narration, the silent master has a silent audio track ready for editing. Use raw-ui-initial.webm and raw-ui-resume.webm from the capture directory for animated click/scroll cutaways; the animatic uses still product frames to hold exact beats. Keep the simulated-marketplace disclosure visible and indicate when Shasta confirmation waits have been shortened.
 
 ## Network fallback
 
