@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "mode": "live",
+  "state": "complete",
+  "capturedAt": "2026-09-29T02:24:54.912Z",
+  "webUrl": "http://127.0.0.1:5173",
+  "apiUrl": "http://127.0.0.1:8787",
+  "disclosure": "Restaurant, menu, quote, and fulfillment data are simulated. Kiln and Shasta claims require recorded evidence.",
+  "status": {
+    "kiln": {
+      "configured": true,
+      "connected": null,
+      "model": "qwen3-32b"
+    },
+    "chain": {
+      "network": "shasta",
+      "connected": null,
+      "configured": true,
+      "asset": "test TRX",
+      "contractAddress": "TG8h1Y9myf8iLgDRHFR3oJzfSmt4WCeugq"
+    },
+    "merchantMode": "fixture"
+  },
+  "kiln": {
+    "plan": {
+      "source": "kiln",
+      "model": "qwen3-32b",
+      "generationId": "797d3e47-19cc-4db1-8b36-e81f76110651",
+      "usage": {
+        "inputTokens": 261,
+        "outputTokens": 97,
+        "totalTokens": 358
+      },
+      "latencyMs": 2791
+    },
+    "recommend": {
+      "source": "kiln",
+      "model": "qwen3-32b",
+      "generationId": "124e1bad-a362-421e-85fa-fc65b0d4ed5f",
+      "usage": {
+        "inputTokens": 358,
+        "outputTokens": 78,
+        "totalTokens": 436
+      },
+      "latencyMs": 1371
+    },
+    "recommendedItemId": "doenjang-stew",
+    "usageFiles": {
+      "currentRun": "kiln-usage-this-run.json",
+      "serverSnapshot": "kiln-usage-server-snapshot.json"
+    },
+    "currentRunTotals": {
+      "inputTokens": 619,
+      "outputTokens": 175,
+      "totalTokens": 794
+    },
+    "usageRecordCount": 50
+  },
+  "chain": {
+    "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+    "approvalTxHash": "a5d68a5293e22c1364c2d53fd0d877e6c70b188700b2d1b19a2284bdac93aa67",
+    "attempts": {
+      "A": {
+        "id": "0x4051d27948272f0533da66b539b3f542b42d65abb7d49cd949ecad5247b38c19",
+        "code": "OVER_LIMIT",
+        "status": "rejected",
+        "amountSun": "19000000",
+        "txHash": "54d18e2de1f80be21f28d42a0bf9f35706730b21578e24a15766012a9733c2fb",
+        "event": "AttemptRejected",
+        "spentSun": 0
+      },
+      "B": {
+        "id": "0xc0a29b85c2830922d620a0f9ad292d7942e5ffda84602de468604a6d2b94e7a4",
+        "code": "MERCHANT_NOT_ALLOWED",
+        "status": "rejected",
+        "amountSun": "14000000",
+        "txHash": "1b545a268a39c3b516cb36838ae7a48ea4b4b917f48c3071c322814e20b317a5",
+        "event": "AttemptRejected",
+        "spentSun": 0
+      },
+      "C": {
+        "id": "0xb6a093b3b0055d06f7bdfe483d0f0aa8fccae36f573b69176a680f99962797ab",
+        "code": "PAYMENT_EXECUTED",
+        "status": "allowed",
+        "amountSun": "16000000",
+        "txHash": "fe89db2251a2d9bcda0e41f5e7bd0f447cb22de7fbd625c96fa42119d67ce2ed",
+        "event": "PaymentExecuted",
+        "spentSun": 16000000
+      },
+      "D": {
+        "id": "0xc3937b7ea615b30d8f388ee20604f4d4a580ff296c4d1bd04864196e1f45de81",
+        "code": "REVOKED",
+        "status": "rejected",
+        "amountSun": "1000000",
+        "txHash": "9f70dbc937658e51941d284e82190f6cf475ad6e726e2aa94b4e1dd5a4d2cdd9",
+        "event": "AttemptRejected",
+        "spentSun": 16000000
+      }
+    },
+    "revokeTxHash": "b099c3dc6547faca54ec93c40e39a256e392027f154cdc35215c7c10ae22f297",
+    "auditVerdict": "pass",
+    "auditFile": "shasta-audit.json",
+    "evidenceFile": "shasta-session-evidence.json"
+  },
+  "shots": [
+    {
+      "id": "00-workbench",
+      "file": "shots/00-workbench.png",
+      "description": "Dinner Run product UI with simulated food catalog",
+      "at": "2026-09-29T02:24:57.071Z"
+    },
+    {
+      "id": "01-agent",
+      "file": "shots/01-agent.png",
+      "description": "Live Kiln parsed the brief and compared known menu IDs",
+      "at": "2026-09-29T02:25:02.632Z"
+    },
+    {
+      "id": "02-review",
+      "file": "shots/02-review.png",
+      "description": "Human reviews all-in cap, allowed payees, duration, and demo wallet custody",
+      "at": "2026-09-29T02:25:03.954Z"
+    },
+    {
+      "id": "03-approved",
+      "file": "shots/03-approved.png",
+      "description": "Demo owner funded the time-limited Shasta permission",
+      "at": "2026-09-29T02:26:07.415Z"
+    },
+    {
+      "id": "04-case-a",
+      "file": "shots/04-case-a.png",
+      "description": "Case A: OVER_LIMIT, confirmed AttemptRejected event",
+      "at": "2026-09-29T02:27:08.432Z"
+    },
+    {
+      "id": "05-case-b",
+      "file": "shots/05-case-b.png",
+      "description": "Case B: MERCHANT_NOT_ALLOWED, confirmed AttemptRejected event",
+      "at": "2026-09-29T02:28:19.930Z"
+    },
+    {
+      "id": "06-case-c",
+      "file": "shots/06-case-c.png",
+      "description": "Case C: PAYMENT_EXECUTED, confirmed PaymentExecuted event",
+      "at": "2026-09-29T02:29:21.779Z"
+    },
+    {
+      "id": "07-receipt",
+      "file": "shots/07-receipt.png",
+      "description": "Real Shasta payment receipt tied to Case C",
+      "at": "2026-09-29T02:29:23.036Z"
+    },
+    {
+      "id": "08-stopped",
+      "file": "shots/08-stopped.png",
+      "description": "Owner revocation confirmed on Shasta",
+      "at": "2026-09-29T02:30:24.372Z"
+    },
+    {
+      "id": "09-case-d",
+      "file": "shots/09-case-d.png",
+      "description": "Post-revoke regression test: real REVOKED event from the original session",
+      "at": "2026-09-29T02:52:35.365Z"
+    },
+    {
+      "id": "10-audit",
+      "file": "shots/10-audit.png",
+      "description": "Read-only audit passed for all four decisions from the original session",
+      "at": "2026-09-29T02:52:40.246Z"
+    },
+    {
+      "id": "11-usage",
+      "file": "shots/11-usage.png",
+      "description": "Cumulative server usage summary; this run is isolated in kiln-usage-this-run.json",
+      "at": "2026-09-29T02:52:41.457Z"
+    },
+    {
+      "id": "12-usage-current",
+      "file": "shots/12-usage-current.png",
+      "description": "The two Kiln request rows from the original capture",
+      "at": "2026-09-29T02:52:42.634Z"
+    }
+  ],
+  "pageErrors": [],
+  "capturePath": "A/B/C and revoke were captured in the original browser context; the renamed D UI step, audit, and usage were captured in a new browser context using the same session ID.",
+  "resumedAt": "2026-09-29T02:52:43.336Z"
+}

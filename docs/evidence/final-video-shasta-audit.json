@@ -1,0 +1,61 @@
+{
+  "audit": {
+    "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+    "verdict": "pass",
+    "summary": "The recorded payment follows the approved financial boundaries.",
+    "checks": [
+      {
+        "label": "Policy hash matches Shasta",
+        "passed": true,
+        "detail": "The recorded policy is bound to the on-chain session."
+      },
+      {
+        "label": "Owner and agent match",
+        "passed": true,
+        "detail": "Both signing roles match the approved session."
+      },
+      {
+        "label": "Budget and per-payment limit match",
+        "passed": true,
+        "detail": "The on-chain SUN limits match the human-approved limits."
+      },
+      {
+        "label": "Expiry matches",
+        "passed": true,
+        "detail": "The on-chain deadline matches the approved deadline."
+      },
+      {
+        "label": "Merchant allowlist matches",
+        "passed": true,
+        "detail": "The on-chain payee addresses match the confirmed allowlist."
+      },
+      {
+        "label": "Approval transaction contains SessionCreated",
+        "passed": true,
+        "detail": "The on-chain authorization event is linked to this session."
+      },
+      {
+        "label": "Attempt A replays from policy and chain",
+        "passed": true,
+        "detail": "Quote, decision, recipient and event match."
+      },
+      {
+        "label": "Attempt B replays from policy and chain",
+        "passed": true,
+        "detail": "Quote, decision, recipient and event match."
+      },
+      {
+        "label": "Attempt C replays from policy and chain",
+        "passed": true,
+        "detail": "Quote, decision, recipient and event match."
+      },
+      {
+        "label": "Attempt D replays from policy and chain",
+        "passed": true,
+        "detail": "Quote, decision, recipient and event match."
+      }
+    ],
+    "source": "mixed",
+    "disclosure": "Merchant quotes and fulfillment are simulated; Shasta transactions are queried independently."
+  }
+}

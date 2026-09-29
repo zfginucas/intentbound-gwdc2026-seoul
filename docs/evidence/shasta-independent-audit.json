@@ -1,0 +1,70 @@
+{
+  "verdict": "pass",
+  "network": "tron-shasta",
+  "sessionId": "0xc16315061b33ed4b4b094a76749ac5631660fb94f1eb6638899d59c6ecc09c63",
+  "contractAddress": "TG8h1Y9myf8iLgDRHFR3oJzfSmt4WCeugq",
+  "paidSun": "16000000",
+  "checks": [
+    {
+      "name": "Policy hash is reproducible",
+      "passed": true,
+      "detail": "SHA-256 of the exported approved fields"
+    },
+    {
+      "name": "Contract policy hash matches record",
+      "passed": true,
+      "detail": "The contract stores the same policy hash"
+    },
+    {
+      "name": "Contract owner and agent match",
+      "passed": true,
+      "detail": "Public TRON addresses"
+    },
+    {
+      "name": "Contract limits and expiry match",
+      "passed": true,
+      "detail": "SUN limits and UTC deadline"
+    },
+    {
+      "name": "Contract merchant allowlist matches",
+      "passed": true,
+      "detail": "Base58 recipient addresses, not display names"
+    },
+    {
+      "name": "Owner approval transaction is confirmed",
+      "passed": true,
+      "detail": "2cad437455dc7fd0a530c6a568dc7ce015b2f3055ab591ea0277f43fefecead6"
+    },
+    {
+      "name": "Attempt A quote and decision replay",
+      "passed": true,
+      "detail": "e0f5b377c663499637f4f8b1ce713ecdc21f1ce8960c2d4e98a7f10e94524208"
+    },
+    {
+      "name": "Attempt B quote and decision replay",
+      "passed": true,
+      "detail": "829a43f33bd8f6f0c887633b524c84dcc5af3d040ed42c363870935aabb18a1c"
+    },
+    {
+      "name": "Attempt C quote and decision replay",
+      "passed": true,
+      "detail": "4d0115f916def42b2fdbc38f2044ea6dcba7c128e8cab129c16dbf1de70d654a"
+    },
+    {
+      "name": "Attempt D quote and decision replay",
+      "passed": true,
+      "detail": "991cf2473e931c7beb7cc611d5cf38c2ad2b32b8523a74a76ec9c421caa461ae"
+    },
+    {
+      "name": "Contract spent amount equals executed payment events",
+      "passed": true,
+      "detail": "Paid 16000000 SUN; contract spent 16000000 SUN"
+    },
+    {
+      "name": "Owner stop transaction is confirmed",
+      "passed": true,
+      "detail": "55e2320bd8d2bc0106879cbe0af6660d2afb231b25b4aa56d1f67eee23e9b665"
+    }
+  ],
+  "disclosure": "Merchants, menus, quotes and delivery are simulated; this verifies testnet spending boundaries only."
+}

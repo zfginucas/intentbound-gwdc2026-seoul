@@ -1,0 +1,42 @@
+{
+  "status": "initial_live_smoke_not_final_demo",
+  "provider": "Kiln",
+  "model": "qwen3-32b",
+  "merchantData": "simulated",
+  "flows": [
+    {
+      "flow": "plan",
+      "requestSummary": "Warm dinner without cilantro, at most 18 test TRX, only Seoul Bowl or Han Table, within 10 minutes.",
+      "observedDecision": {
+        "budgetTrx": 18,
+        "allowedMerchantIds": ["seoul-bowl", "han-table"],
+        "requiresHumanConfirmation": true
+      },
+      "generationId": "ec507030-a44c-4168-927e-3dce7435ac1a",
+      "usage": {
+        "inputTokens": 260,
+        "outputTokens": 97,
+        "totalTokens": 357
+      },
+      "latencyMs": 1970,
+      "recordedAtUtc": "2026-09-28T18:59:01.230Z"
+    },
+    {
+      "flow": "recommend",
+      "requestSummary": "Rank simulated meals for a warm, cilantro-free dinner under the approved 18 test TRX cap.",
+      "observedDecision": {
+        "itemId": "doenjang-stew",
+        "merchantId": "han-table",
+        "fixtureQuoteTotalTrx": 16
+      },
+      "generationId": "19b204fc-c692-43d2-9a68-cae357455524",
+      "usage": {
+        "inputTokens": 358,
+        "outputTokens": 75,
+        "totalTokens": 433
+      },
+      "latencyMs": 1757,
+      "recordedAtUtc": "2026-09-28T18:59:13.840Z"
+    }
+  ]
+}

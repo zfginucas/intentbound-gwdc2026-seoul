@@ -1,0 +1,44 @@
+{
+  "model": "qwen3-32b",
+  "capturedAt": "2026-09-29T02:24:54.912Z",
+  "disclosure": "These two API ledger records belong to the original capture session. Server totals include earlier calls.",
+  "records": [
+    {
+      "id": "37887614-bbdb-4cd2-bd8f-e86587fc5600",
+      "purpose": "plan",
+      "inference": {
+        "source": "kiln",
+        "model": "qwen3-32b",
+        "generationId": "797d3e47-19cc-4db1-8b36-e81f76110651",
+        "usage": {
+          "inputTokens": 261,
+          "outputTokens": 97,
+          "totalTokens": 358
+        },
+        "latencyMs": 2791
+      },
+      "createdAt": "2026-09-29T02:25:00.697Z"
+    },
+    {
+      "id": "91f64dcb-444b-4dfb-a4ff-3fd28da5f064",
+      "purpose": "recommend",
+      "inference": {
+        "source": "kiln",
+        "model": "qwen3-32b",
+        "generationId": "124e1bad-a362-421e-85fa-fc65b0d4ed5f",
+        "usage": {
+          "inputTokens": 358,
+          "outputTokens": 78,
+          "totalTokens": 436
+        },
+        "latencyMs": 1371
+      },
+      "createdAt": "2026-09-29T02:25:02.129Z"
+    }
+  ],
+  "totals": {
+    "inputTokens": 619,
+    "outputTokens": 175,
+    "totalTokens": 794
+  }
+}

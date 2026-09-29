@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:12,000
+The agent can choose dinner, not its spending limits.
+
+2
+00:00:12,000 --> 00:00:30,000
+Kiln qwen3-32b parses the brief and compares menu IDs.
+
+3
+00:00:30,000 --> 00:00:45,000
+Mina reviews: 18 test TRX, two payees, ten minutes.
+
+4
+00:00:45,000 --> 00:00:55,000
+The demo owner funds a bounded Shasta session.
+
+5
+00:00:55,000 --> 00:01:18,000
+A: 15 + 2 + 2 = 19. No payment leaves the vault.
+
+6
+00:01:18,000 --> 00:01:40,000
+B: cheaper lookalike, but the payee is not approved.
+
+7
+00:01:40,000 --> 00:02:04,000
+C: 16 test TRX. Confirmed Shasta payment and receipt.
+
+8
+00:02:04,000 --> 00:02:17,000
+Stop is confirmed. D is refused despite spare budget.
+
+9
+00:02:17,000 --> 00:02:35,000
+No wallet needed: the public audit replays every event.
+
+10
+00:02:35,000 --> 00:02:45,000
+Real model usage. Deterministic checks need no extra call.

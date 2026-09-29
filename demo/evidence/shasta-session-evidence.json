@@ -1,0 +1,181 @@
+{
+  "evidence": {
+    "id": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+    "policy": {
+      "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+      "owner": "TTMWWb3XEtQ3C7i8vBB2xiZShNgWsuEdZK",
+      "agent": "TUNZmDHYGUKuk2yQcEn9YVSm8oZRtNbcRj",
+      "totalCapSun": "18000000",
+      "perPaymentCapSun": "18000000",
+      "allowedMerchantAddresses": [
+        "TDLxYZ1KbF6kvcDeJeyKB6pFv157h8xitt",
+        "TB2sCSX5RDK8GMFT1ZTSsR8FsP1nWPFM5b"
+      ],
+      "expiresAt": 1790649304,
+      "revoked": false
+    },
+    "policyHash": "0x80472d3b9bc3cf9abe3e9e0b3db4cdf037301a80fde3d3865434003ea993a97e",
+    "allowedMerchantIds": [
+      "seoul-bowl",
+      "han-table"
+    ],
+    "approvalTxHash": "a5d68a5293e22c1364c2d53fd0d877e6c70b188700b2d1b19a2284bdac93aa67",
+    "revokeTxHash": "b099c3dc6547faca54ec93c40e39a256e392027f154cdc35215c7c10ae22f297",
+    "state": "revoked",
+    "createdAt": "2026-09-29T02:25:04.841Z",
+    "attempts": [
+      {
+        "id": "0x4051d27948272f0533da66b539b3f542b42d65abb7d49cd949ecad5247b38c19",
+        "quoteId": "A",
+        "quote": {
+          "quoteId": "A",
+          "itemId": "bibimbap-bowl",
+          "merchantAddress": "TDLxYZ1KbF6kvcDeJeyKB6pFv157h8xitt",
+          "itemsSun": "15000000",
+          "deliverySun": "2000000",
+          "serviceSun": "2000000",
+          "taxSun": "0",
+          "discountSun": "0",
+          "totalSun": "19000000",
+          "expiresAt": 1790648888
+        },
+        "quoteHash": "0x95a03bbc09245fb06109f711793faa8f6003fc4e57127c4893ad1ec323d9614f",
+        "policyRevokedAtAttempt": false,
+        "spentBeforeSun": "0",
+        "remainingBeforeSun": "18000000",
+        "decision": {
+          "atSeconds": 1790648768,
+          "code": "OVER_LIMIT",
+          "amountSun": "19000000"
+        },
+        "chainEvent": {
+          "name": "AttemptRejected",
+          "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+          "merchantAddress": "TDLxYZ1KbF6kvcDeJeyKB6pFv157h8xitt",
+          "amountSun": "19000000",
+          "quoteHash": "0x95a03bbc09245fb06109f711793faa8f6003fc4e57127c4893ad1ec323d9614f",
+          "reason": "OVER_LIMIT"
+        },
+        "status": "rejected",
+        "code": "OVER_LIMIT",
+        "reason": "The fee-inclusive payment exceeds the remaining session budget. Amount: 19000000 SUN; cap: 18000000 SUN.",
+        "txHash": "54d18e2de1f80be21f28d42a0bf9f35706730b21578e24a15766012a9733c2fb",
+        "timestamp": "2026-09-29T02:26:08.309Z"
+      },
+      {
+        "id": "0xc0a29b85c2830922d620a0f9ad292d7942e5ffda84602de468604a6d2b94e7a4",
+        "quoteId": "B",
+        "quote": {
+          "quoteId": "B",
+          "itemId": "express-bibimbap",
+          "merchantAddress": "TDiTQkRBsW6Z7v15s5gYMi1SHKz1VGQkFe",
+          "itemsSun": "11000000",
+          "deliverySun": "2000000",
+          "serviceSun": "1000000",
+          "taxSun": "0",
+          "discountSun": "0",
+          "totalSun": "14000000",
+          "expiresAt": 1790648949
+        },
+        "quoteHash": "0xf69380e3c6d08b8142927d3a6621ef42f68954241506f4a758290458f6226278",
+        "policyRevokedAtAttempt": false,
+        "spentBeforeSun": "0",
+        "remainingBeforeSun": "18000000",
+        "decision": {
+          "atSeconds": 1790648829,
+          "code": "MERCHANT_NOT_ALLOWED",
+          "amountSun": "14000000"
+        },
+        "chainEvent": {
+          "name": "AttemptRejected",
+          "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+          "merchantAddress": "TDiTQkRBsW6Z7v15s5gYMi1SHKz1VGQkFe",
+          "amountSun": "14000000",
+          "quoteHash": "0xf69380e3c6d08b8142927d3a6621ef42f68954241506f4a758290458f6226278",
+          "reason": "MERCHANT_NOT_ALLOWED"
+        },
+        "status": "rejected",
+        "code": "MERCHANT_NOT_ALLOWED",
+        "reason": "The recipient address is outside the approved merchant list.",
+        "txHash": "1b545a268a39c3b516cb36838ae7a48ea4b4b917f48c3071c322814e20b317a5",
+        "timestamp": "2026-09-29T02:27:09.344Z"
+      },
+      {
+        "id": "0xb6a093b3b0055d06f7bdfe483d0f0aa8fccae36f573b69176a680f99962797ab",
+        "quoteId": "C",
+        "quote": {
+          "quoteId": "C",
+          "itemId": "doenjang-stew",
+          "merchantAddress": "TB2sCSX5RDK8GMFT1ZTSsR8FsP1nWPFM5b",
+          "itemsSun": "13000000",
+          "deliverySun": "2000000",
+          "serviceSun": "1000000",
+          "taxSun": "0",
+          "discountSun": "0",
+          "totalSun": "16000000",
+          "expiresAt": 1790649020
+        },
+        "quoteHash": "0xa56656d12451e271354e6379395266b8c10f62a1debc053871a4c5e57aed227e",
+        "policyRevokedAtAttempt": false,
+        "spentBeforeSun": "0",
+        "remainingBeforeSun": "18000000",
+        "decision": {
+          "atSeconds": 1790648900,
+          "code": "APPROVED",
+          "amountSun": "16000000"
+        },
+        "chainEvent": {
+          "name": "PaymentExecuted",
+          "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+          "merchantAddress": "TB2sCSX5RDK8GMFT1ZTSsR8FsP1nWPFM5b",
+          "amountSun": "16000000",
+          "quoteHash": "0xa56656d12451e271354e6379395266b8c10f62a1debc053871a4c5e57aed227e"
+        },
+        "status": "allowed",
+        "code": "PAYMENT_EXECUTED",
+        "reason": "Payment passed the confirmed session policy.",
+        "txHash": "fe89db2251a2d9bcda0e41f5e7bd0f447cb22de7fbd625c96fa42119d67ce2ed",
+        "timestamp": "2026-09-29T02:28:20.828Z"
+      },
+      {
+        "id": "0xc3937b7ea615b30d8f388ee20604f4d4a580ff296c4d1bd04864196e1f45de81",
+        "quoteId": "D",
+        "quote": {
+          "quoteId": "D",
+          "itemId": "plum-tea",
+          "merchantAddress": "TB2sCSX5RDK8GMFT1ZTSsR8FsP1nWPFM5b",
+          "itemsSun": "1000000",
+          "deliverySun": "0",
+          "serviceSun": "0",
+          "taxSun": "0",
+          "discountSun": "0",
+          "totalSun": "1000000",
+          "expiresAt": 1790650411
+        },
+        "quoteHash": "0x7996af74ce77e6b3d27e10674ac211d6b5747aa017076cbe74052312beca6bdf",
+        "policyRevokedAtAttempt": true,
+        "spentBeforeSun": "16000000",
+        "remainingBeforeSun": "2000000",
+        "decision": {
+          "atSeconds": 1790650291,
+          "code": "REVOKED",
+          "amountSun": "1000000"
+        },
+        "chainEvent": {
+          "name": "AttemptRejected",
+          "sessionId": "0xc6ff6c2d326a69a868023cf768edef7a171b6a0756f90161e928bcceab788b1d",
+          "merchantAddress": "TB2sCSX5RDK8GMFT1ZTSsR8FsP1nWPFM5b",
+          "amountSun": "1000000",
+          "quoteHash": "0x7996af74ce77e6b3d27e10674ac211d6b5747aa017076cbe74052312beca6bdf",
+          "reason": "REVOKED"
+        },
+        "status": "rejected",
+        "code": "REVOKED",
+        "reason": "The owner stopped this session before the payment attempt.",
+        "txHash": "9f70dbc937658e51941d284e82190f6cf475ad6e726e2aa94b4e1dd5a4d2cdd9",
+        "timestamp": "2026-09-29T02:51:31.251Z"
+      }
+    ]
+  },
+  "disclosure": "Merchant quotes and fulfillment are simulated."
+}

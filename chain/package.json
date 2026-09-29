@@ -1,0 +1,25 @@
+{
+  "name": "intentbound-chain",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "tronbox compile --all && node scripts/compile.mjs",
+    "compile:evm": "node scripts/compile-evm.mjs",
+    "test": "npm run compile:evm && node --test test/*.test.mjs",
+    "wallets": "node scripts/create-wallets.mjs",
+    "shasta:status": "node scripts/shasta-status.mjs",
+    "shasta:fund-agent": "node scripts/fund-agent-shasta.mjs",
+    "shasta:deploy": "npm run compile && node scripts/deploy-shasta.mjs",
+    "shasta:withdraw": "node scripts/withdraw-shasta.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ethers": "^6.15.0",
+    "tronweb": "6.5.1"
+  },
+  "devDependencies": {
+    "ganache": "^7.9.2",
+    "solc": "0.8.20",
+    "tronbox": "4.11.0"
+  }
+}

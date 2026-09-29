@@ -1,0 +1,8 @@
+{
+  "network": "tron-shasta",
+  "rpc": "https://api.shasta.trongrid.io",
+  "contractAddress": "TG8h1Y9myf8iLgDRHFR3oJzfSmt4WCeugq",
+  "deploymentTxHash": "8d4d1b915e451ed114b1156aeeef5a624dd27d2c25d9ca7bb957f2f933f94117",
+  "blockNumber": 68789627,
+  "compilerVersion": "0.8.20+commit.5f1834bc.Emscripten.clang"
+}

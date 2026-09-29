@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:09,000
+Draft preview. No Shasta payment is shown.
+
+2
+00:00:09,000 --> 00:00:23,000
+Live Kiln turns Mina's dinner brief into a menu choice.
+
+3
+00:00:23,000 --> 00:00:38,000
+Mina reviews the 18 test TRX cap and exact payees.
+
+4
+00:00:38,000 --> 00:00:52,000
+Real Kiln usage; Shasta payment is not active in this preview.
